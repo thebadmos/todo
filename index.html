@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO APP</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@700&family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-dark">
+        <span class="navbar-brand mb-0 h1">TO DO APP</span>
+    </nav>
+    <div class="container mt-4">
+        <h3 class="display- 8 text-center">My To do List</h3>
+
+        <form id="taskForm">
+            <div class="form_group">
+                <label for="task">Title</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="task">Note</label>
+                <textarea class="form-control" id="note" class="form-control" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="dateTask">Date</label>
+                <input type="date" class="form-control" id="dateTask">
+            </div>
+
+            <input type="submit" value="Add New Task" class="btn btn-primary btn-block">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Note</th>
+                    <th>Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="task-list"></tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    
+    </script>
+</body>
+
+</html>
